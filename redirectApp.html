@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitMEX Mobile Redirect</title>
+    <script>
+        if (/android/i.test(navigator.userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.bitmex.app.android"; 
+        } else if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
+            window.location.href = "https://apps.apple.com/bh/app/bitmex-buy-bitcoin-crypto/id1589023233"; 
+        } else {
+            window.location.href = "https://www.bitmex.com/mobile";
+        }
+    </script>
+</head>
+</html>
